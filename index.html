@@ -15,8 +15,10 @@
 </head>
 <body>
   <div class="modal">
-    <img class="perfume-img-mobile" src="./images/image-product-mobile.jpg" alt="Perfume">
-    <img class="perfume-img-desktop" src="./images/image-product-desktop.jpg" alt="Perfume">
+    <picture class="perfume-img-wrapper">
+      <source srcset="/images/image-product-desktop.jpg" media="(min-width: 1440px)">
+      <img src="/images/image-product-mobile.jpg" alt="Perfume">
+    </picture>
     <div class="product-details-wrapper">
       <span class="product">Perfume</span>
       <h1 class="product-label">Gabrielle Essence Eau De Parfum</h1>
